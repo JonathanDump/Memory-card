@@ -1,28 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import app from "./App.module.scss";
 import Header from "./components/header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/footer/Footer";
-import { shuffleCards } from "./functions";
+import { playAgain, shuffleCards } from "./functions";
+import GameOver from "./components/gameOver/GameOver";
 
 function App() {
   const [best, setBest] = useState(0);
   const [current, setCurrent] = useState([]);
-
   const [cards, setCards] = useState(shuffleCards());
 
+  const status = useRef({ score: 0, isOver: false });
+
   useEffect(() => {
+    console.log(current);
+    console.log(status);
     setCards(shuffleCards());
     if (best < current.length) {
       setBest(current.length);
     }
   }, [current]);
 
-  console.log(cards);
   return (
     <div className={app.app}>
       <Header best={best} current={current.length} />
       <Main
+        status={status}
         cards={cards}
         best={best}
         setBest={setBest}
@@ -30,6 +34,11 @@ function App() {
         setCurrent={setCurrent}
       />
       <Footer />
+      <GameOver
+        status={status}
+        playAgain={playAgain}
+        rerenderApp={setCurrent}
+      />
     </div>
   );
 }

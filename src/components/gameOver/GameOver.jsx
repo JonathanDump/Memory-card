@@ -1,0 +1,42 @@
+import React from "react";
+import over from "./GameOver.module.scss";
+
+export default function GameOver({ status, playAgain, rerenderApp }) {
+  const { score, isOver } = status.current;
+
+  console.log(score, isOver);
+  let text = null;
+  if (score < 12 && isOver) {
+    text = (
+      <div className={over.text}>
+        Game is over. <br />
+        Your score is {score}
+      </div>
+    );
+  } else if (score === 12 && isOver) {
+    text = (
+      <div className={over.text}>
+        Game is over. <br />
+        Your score is {score}
+      </div>
+    );
+  }
+
+  if ((score < 12 && isOver) || (score === 12 && isOver))
+    return (
+      <div className={over.bg}>
+        <div className={over.gameOver}>
+          {text}
+          <button
+            type="button"
+            onClick={() => {
+              playAgain(status);
+              rerenderApp([]);
+            }}
+          >
+            Play again
+          </button>
+        </div>
+      </div>
+    );
+}
