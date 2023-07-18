@@ -20,6 +20,9 @@ function App() {
     if (best < current.length) {
       setBest(current.length);
     }
+    if (status.current.score === 12) {
+      status.current.isOver = true;
+    }
   }, [current]);
 
   return (

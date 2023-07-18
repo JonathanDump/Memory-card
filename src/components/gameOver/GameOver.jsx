@@ -16,8 +16,8 @@ export default function GameOver({ status, playAgain, rerenderApp }) {
   } else if (score === 12 && isOver) {
     text = (
       <div className={over.text}>
-        Game is over. <br />
-        Your score is {score}
+        You have got a great memory!
+        <br /> You remembered all cards {score} <br />
       </div>
     );
   }

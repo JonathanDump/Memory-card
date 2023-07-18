@@ -1,7 +1,18 @@
-.image {
-  height: 250px;
-  overflow: hidden;
-  img {
-    width: 200px;
+.card {
+  background-color: white;
+  padding: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+  .image {
+    height: 220px;
+    overflow: hidden;
+    img {
+      width: 170px;
+    }
   }
 }

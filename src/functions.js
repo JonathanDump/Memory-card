@@ -11,7 +11,7 @@ export function shuffleCards() {
 }
 
 export function handleClick({ current, setCurrent, name, status }) {
-  if (current.includes(name) || current.length === 12) {
+  if (current.includes(name)) {
     setCurrent([]);
     status.current.isOver = true;
     return;

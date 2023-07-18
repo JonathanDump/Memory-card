@@ -6,6 +6,7 @@ import { handleClick } from "../../functions";
 export default function Main({ status, cards, ...restProps }) {
   return (
     <div className={main.main}>
+      <div className={main.bgImage}></div>
       <div className={main.board}>
         {cards.map(({ image, name }, i) => (
           <Card

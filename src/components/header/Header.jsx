@@ -4,7 +4,9 @@ import React from "react";
 export default function Header({ best, current }) {
   return (
     <div className={header.header}>
-      <div className={header.logo}></div>
+      <div className={header.logo}>
+        <img src="/public/theOfficeLogo.png" alt="The Office logo" />
+      </div>
       <div className={header.rules}>Don't click the same card twice</div>
       <div className={header.scores}>
         <div className={header.best}>Best: {best}</div>
