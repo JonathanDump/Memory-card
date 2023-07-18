@@ -14,8 +14,6 @@ function App() {
   const status = useRef({ score: 0, isOver: false });
 
   useEffect(() => {
-    console.log(current);
-    console.log(status);
     setCards(shuffleCards());
     if (best < current.length) {
       setBest(current.length);
