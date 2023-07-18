@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Memory-card/assets/apple-touch-icon-0de68a20.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBxIKNwQVWCNlAAACAklEQVRIx+3US0uVcRAG8N/7nlMdLS9pGlam2e0UlgvpQkQtSlpFS2nXqr5AXyCoRR8i+gARtagIi0iihREKZQmK5QVRy7JEz7GO531beBIrTdfRM7v5zzwz8/yZ4T/+AQQqFa8QEwqWyY1MJ201LP5LerltIuSXIAqtoX6F+g0qsFaTSsEvRpkz4V+rzyOPve5oFf9i5AlXpdQaDUYVK1vkK1YEyUIAedGyHZx0Q6lmKVcLvoRruEJSZLOLpn3QYUCJabnfCGI1MipN2ikhX/CFyoUkhcYN++CARgPS2t1d4iOzyPi2oFik1zbrxfMjTJvx0Zh9SiT+SE/YKMKUtwtjVjuv2msf5wmemPMWD1UZ+UOBc1pVmdTjJiiVdsEBExI/RWxwWr82Z004bFS7zCIF0o6iV0aZPXJatOgzZtZ3kmIbXXLbKWknjMl7YcRxPbKa3BebMyvhm5yck9546pAjqrw0N09QLuexLRr1GRKos91761wQyWtzyyOtmmWNG9dvk10mPDNog69JgTFZl+3w0EFDUlJm1YlNCQ0JDes247lPCHBMh04dKtQIkgJZ1zW7551XMkIpXzQZ9MBunSpAl66CIkX2eyCvW6VyQaDewArLNOVzYQ9ju3y1R49Sg9apVxs4uMI6l6pd9B4JREKxUCyQXM1BCZY5KMRm/Me/gB+fTKjnU2OzRwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0xOFQxMDo1NTowNCswMDowMHVRtpYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMThUMTA6NTU6MDQrMDA6MDAEDA4qAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBxIKNwQVWCNlAAAAzElEQVQoz7XRv0pCYQAF8N+nV/qj1yuoWTaHhEII0dDQ1kM0NNTr9EK9QEvuQUNQWyRNElb36udyaZBWz3YO5wznHDaOIF1TqqqiULJFYsfsjxK0VbR8gKhLcy3fdupOiqBhUFF35kimVloqrt26QN2NLLHUMdR07xnRlkwux66Bt0RuaqqjYVthaezSk1cjV849JvYd6zvwaaRQePdgbk/L0IufoO9ENFeTin5N5HoYq5s4DLq+xLIiQVdhqSHzbab3/1DEcqzF5r+yAr5OMOCbhqVQAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA3LTE4VDEwOjU1OjA0KzAwOjAwdVG2lgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wNy0xOFQxMDo1NTowNCswMDowMAQMDioAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/Memory-card/assets/safari-pinned-tab-e7626821.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>The office memory game</title>
+    <script type="module" crossorigin src="/Memory-card/assets/index-4c5906aa.js"></script>
+    <link rel="stylesheet" href="/Memory-card/assets/index-7578c4cb.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
