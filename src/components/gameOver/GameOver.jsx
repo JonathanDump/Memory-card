@@ -4,7 +4,6 @@ import over from "./GameOver.module.scss";
 export default function GameOver({ status, playAgain, rerenderApp }) {
   const { score, isOver } = status.current;
 
-  console.log(score, isOver);
   let text = null;
   if (score < 12 && isOver) {
     text = (
