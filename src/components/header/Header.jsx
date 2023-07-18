@@ -5,7 +5,7 @@ export default function Header({ best, current }) {
   return (
     <div className={header.header}>
       <div className={header.logo}>
-        <img src="/public/logo.png" alt="The Office logo" />
+        <img src="/public/logo.jpeg" alt="The Office logo" />
       </div>
       <div className={header.rules}>Don't click the same card twice</div>
       <div className={header.scores}>
