@@ -1,11 +1,12 @@
 .main {
-  height: 100%;
-  // flex: 1;
+  // height: 100%;
+  flex: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 8px;
 
   .bgImage {
     background-image: url("/public/jim-halperts-desk.jpg");
@@ -20,8 +21,9 @@
     z-index: -20;
   }
   .board {
+    width: 808px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, 178px);
     gap: 32px;
     justify-content: center;
   }
